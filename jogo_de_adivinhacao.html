@@ -1,0 +1,41 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+      document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc (peso, altura){
+        imc = peso / (altura*altura);
+        return imc;
+    }
+
+    function sorteia (){
+        n = Math.round(Math.random()*100);
+        return n;
+    }
+
+    var numeroSorteado = sorteia();
+    console.log(numeroSorteado);
+    var tentativas = 1;
+
+    for (tentativas; tentativas <=3; tentativas++){
+        var chuteDoUsuario = parseInt(prompt("Digite seu chute"));
+
+        if (chuteDoUsuario == numeroSorteado){
+            alert("Carai meu fi. Tu é cagado viu?!");
+            break;
+        } else if (chuteDoUsuario > numeroSorteado){
+            alert("Exagerou um pouco. Tira o pé aí...");
+        } else {
+            alert("Pode botar mais lenha nessa fogueira!");
+        }
+    }
+    
+
+</script>

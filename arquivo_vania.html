@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome" id="id">
+    <button>Compare</button>
+
+<script>
+
+    var input = document.querySelector('input');
+    input.focus();
+    var botao = document.querySelector('button');
+    var segredo = Math.round(Math.random()*10);
+    console.log(segredo)
+
+    function verifica(){
+        if(segredo == input.value){
+            alert ('Voce acertou');
+        }else{
+            alert ('Voce errou');
+        }
+        input.value = '';
+        input.focus();
+    }
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    verifica();
+  }
+});
+
+    botao.onclick = verifica;
+</script>
+    
+</body>
+</html>

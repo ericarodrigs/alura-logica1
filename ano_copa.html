@@ -1,0 +1,23 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+      document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoPrimeiraCopa = 1930;
+    var anoLimite = parseInt(prompt('Até quando você quer saber em quais anos tiveram copa?'));
+
+    while (anoLimite > anoPrimeiraCopa){
+        mostra('Teve copa em ' + anoPrimeiraCopa);
+        anoPrimeiraCopa = anoPrimeiraCopa + 4;
+    }
+
+    mostra ('FIM');
+
+</script>

@@ -1,0 +1,28 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+      document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc (peso, altura){
+        imc = peso / (altura*altura);
+        return imc;
+    }
+
+    var idade = parseInt(prompt("Digite sua idade"));
+    var temCarteira = (prompt("Você tem habilitação? Responda sim ou não"));
+
+    if (idade >= 18 && temCarteira == "sim"){
+        mostra("Você pode dirigir!!");
+    }
+    else{
+        mostra("Desculpa, infelizmente você não pode dirigir.");
+    }
+
+</script>

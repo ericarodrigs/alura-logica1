@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<input>
+<button>Mostrar texto</button>
+
+<script>
+    
+    var texto = document.querySelector('input');
+    texto.focus();
+    var mostrarTexto = document.querySelector ('button');
+    mostrarTexto.onclick = exibeTexto;
+
+    function exibeTexto (){
+        alert(texto.value);
+    }
+
+</script>

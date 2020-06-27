@@ -1,0 +1,23 @@
+ <meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+      document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroAtual = 20;
+    var numeroLimite = 0;
+    
+    while (numeroAtual >= numeroLimite){
+        mostra(numeroAtual);
+        numeroAtual = numeroAtual - 1;
+    }
+
+    mostra ('FIM');
+
+</script>
